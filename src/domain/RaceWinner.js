@@ -12,7 +12,7 @@ class RaceWinner {
     return maxMove;
   }
 
-  #eachCarMoveTrace(carsMoveInfoList) {
+  #eachCarMove(carsMoveInfoList) {
     return carsMoveInfoList.map((moveInfo) =>
       numberMoveSuccess(moveInfo.moveTrace)
     );
