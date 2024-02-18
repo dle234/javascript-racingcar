@@ -7,13 +7,13 @@ class MoveCarInfo {
   }
 
   move(randomNum) {
-    if (this.moveCondition(randomNum)) {
+    if (this.#moveCondition(randomNum)) {
       return this.#moveTrace.push(true);
     }
     return this.#moveTrace.push(false);
   }
 
-  moveCondition(randomNum) {
+  #moveCondition(randomNum) {
     if (randomNum >= 4) {
       return true;
     }
